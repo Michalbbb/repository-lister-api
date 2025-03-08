@@ -24,7 +24,7 @@ When backing api returns code 200 :
         "sha": ${lastCommitSha}
       },
       {...}	
-    ]
+    ]..
   },
   {...}
 ]
