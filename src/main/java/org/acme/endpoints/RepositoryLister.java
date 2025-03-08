@@ -16,7 +16,7 @@ import org.eclipse.microprofile.rest.client.inject.RegisterRestClient;
 
 @RegisterRestClient
 @RegisterProvider(GitHubExceptionMapper.class)
-@Path("/github")
+@Path("/repositories")
 public class RepositoryLister {
 
     @Inject

@@ -1,6 +1,5 @@
 package org.acme;
 import io.quarkus.test.junit.QuarkusTest;
-import io.restassured.RestAssured;
 import io.restassured.response.Response;
 import org.junit.jupiter.api.Test;
 
@@ -16,7 +15,7 @@ public class GitHubIntegrationTest {
     void testGithubReposIntegration() {
         Response response = given()
                 .when()
-                .get("/github/" + GITHUB_USERNAME)
+                .get("/repositories/" + GITHUB_USERNAME)
                 .then()
                 .statusCode(200)
                 .body("$", not(empty()))
